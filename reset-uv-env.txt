@@ -1,0 +1,5 @@
+Remove-Item .venv
+Remove-Item -Recurse -Force C:\venvs\463.SQL-LLM_udemy
+uv sync
+Move-Item .venv C:\venvs\463.SQL-LLM_udemy
+cmd /c mklink /J .venv C:\venvs\463.SQL-LLM_udemy
